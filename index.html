@@ -58,7 +58,7 @@
             position: relative;
             z-index: 1;
         }
-        /* 头部 - 仅保留图标，无文字说明 */
+        /* 头部 - 仅保留图标 */
         .header { text-align: center; margin-bottom: 1.2rem; }
         .header h1 {
             font-size: 2rem; font-weight: 700;
@@ -71,12 +71,24 @@
             text-align: center;
             font-size: 0.8rem;
             color: var(--text-dim);
-            margin: 0.5rem 0 1rem 0;
+            margin: 0.5rem 0 0.3rem 0;
             padding: 0.3rem;
             border-bottom: 1px dashed #33415c;
             border-top: 1px dashed #33415c;
             background: rgba(0,0,0,0.2);
             border-radius: 20px;
+        }
+        /* 联系方式图标 */
+        .contact-icon {
+            text-align: center;
+            margin: 5px 0 15px 0;
+        }
+        .contact-icon a {
+            display: inline-block;
+            transition: transform 0.2s;
+        }
+        .contact-icon a:hover {
+            transform: scale(1.1);
         }
         /* ===== 主布局 ===== */
         .main-layout {
@@ -341,6 +353,19 @@
                 <!-- 版权声明 -->
                 <div class="disclaimer">
                     <i class="fas fa-info-circle me-1"></i> 所有内容来源自网络，如有侵权联系删除
+                </div>
+
+                <!-- 联系方式图标 -->
+                <div class="contact-icon">
+                    <a href="https://space.bilibili.com/269140788" target="_blank" rel="noopener noreferrer" title="B站主页">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 10C3 8.93913 3.42143 7.92172 4.17157 7.17157C4.92172 6.42143 5.93913 6 7 6H17C18.0609 6 19.0783 6.42143 19.8284 7.17157C20.5786 7.92172 21 8.93913 21 10V16C21 17.0609 20.5786 18.0783 19.8284 18.8284C19.0783 19.5786 18.0609 20 17 20H7C5.93913 20 4.92172 19.5786 4.17157 18.8284C3.42143 18.0783 3 17.0609 3 16V10Z" stroke="#E869A1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                            <path d="M8 3L10 6" stroke="#E869A1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                            <path d="M16 3L14 6" stroke="#E869A1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                            <path d="M9 13V11" stroke="#E869A1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                            <path d="M15 11V13" stroke="#E869A1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                        </svg>
+                    </a>
                 </div>
 
                 <!-- 热搜卡片 -->
